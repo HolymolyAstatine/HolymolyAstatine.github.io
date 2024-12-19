@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>카드 매칭 게임</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="score-board">
+        <div id="player1" class="player">플레이어 1: <span id="score1">0</span></div>
+        <div id="player2" class="player">플레이어 2: <span id="score2">0</span></div>
+    </div>
+    <h1>카드 매칭</h1>
+    <button id="startButton">자 드가자</button>
+    <button id="toggleDarkMode">💡 </button> <!-- 다크 모드 버튼 추가 -->
+    <div class="volume-control">
+        <label for="volumeSlider">🔉:</label>
+        <input type="range" id="volumeSlider" min="0" max="1" step="0.1" value="0.5">
+    </div>
+    <div class="game-board" id="gameBoard"></div>
+    <div id="gameOverMessage" class="game-over-message"></div>
+    <script src="script.js"></script>
+</body>
+</html>
